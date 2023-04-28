@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "b4ec392e-64c2-4fc9-b574-76a82331abf1",
+		"name": "Escuela Magica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ingresa Estudiante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"nombre\",\r\n    \"apellido\": \"Ordonez\",\r\n    \"identificacion\": \"OOGA920801\",\r\n    \"edad\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/solicitudes_ingreso",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"solicitudes_ingreso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Estudiantes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"nombre\",\r\n    \"apellido\": \"Ordonez\",\r\n    \"identificacion\": \"OOGA920801\",\r\n    \"edad\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/solicitudes_registro",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"solicitudes_registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Grimorios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"nombre\",\r\n    \"apellido\": \"Ordonez\",\r\n    \"identificacion\": \"OOGA920801\",\r\n    \"edad\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/asignaciones_grimorios",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"asignaciones_grimorios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borra Estudiante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"nombre\",\r\n    \"apellido\": \"Ordonez\",\r\n    \"identificacion\": \"OOGA920801\",\r\n    \"edad\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/borrado_ingreso/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"borrado_ingreso",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualiza Estudiante",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"nombre\",\r\n    \"apellido\": \"Ordonez\",\r\n    \"identificacion\": \"OOGA920801\",\r\n    \"edad\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/actualizacion_ingreso/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"actualizacion_ingreso",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
